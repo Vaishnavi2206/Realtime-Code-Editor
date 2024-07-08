@@ -1,0 +1,12 @@
+services:
+  - name: frontend
+    envVars:
+      NODE_ENV: production
+    buildCommand: npm run build
+    startCommand: npm start
+
+  - name: backend
+    envVars:
+      NODE_ENV: production
+    buildCommand: ignored
+    startCommand: npm run server:prod
